@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  .container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  header .logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .toggle-view {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .toggle-view button {
+    flex: 4;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #f8f8f8;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  .toggle-view button.active,
+  .toggle-view button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .date-dropdown {
+    margin-bottom: 50px;
+  }
+  #dateDropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #ffff;
+  }
+  .card h3 {
+    font-size: 16px;
+    color: #000000;
+  }
+  .card p {
+    font-size: 14px;
+    color: #888;
+  }
+  #emptyState {
+    color: #000000;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+.header {
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;       
+    padding: 30px;
+    position: fixed;            
+    top: 0;                     
+    right: 0;                   
+    width: 100%;                
+    z-index: 1000;             
+}
+
+.header::after {
+    content: "";
+    display: block;
+    width: 100vw;               
+    height: 2px;
+    background-color: #007bff; 
+    position: fixed;
+    top: 120px;
+    left: 0;
+}
+
+.logo {
+    margin-right: 140px;         
+    margin-left: -10px;        
+}
+
+.logo img {
+    max-height: 80px;           
+    width: auto;               
+}

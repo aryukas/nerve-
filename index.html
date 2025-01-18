@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerve Solution assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+    <div class="logo">
+        <a href="https://www.nerve.solutions/" target="_blank"><img src="logo.png" alt="Logo"></a>
+    </div> 
+</header>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="toggle-view">
+            <button class="active" onclick="changeView('Bullish')">Bullish</button>
+      <button onclick="changeView('Bearish')">Bearish</button>
+      <button onclick="changeView('RangeBound')">RangeBound</button>
+      <button onclick="changeView('Volatile')">Volatile</button>
+        </div>
+
+        <select id="dateDropdown" onchange="updateCards()"></select>
+
+        <div id="cardsContainer" class="cards-container"></div>
+        <div id="emptyState" class="empty-state">
+            <p>No strategies available for <span id="emptyDate"></span>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
